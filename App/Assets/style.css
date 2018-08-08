@@ -1,0 +1,12 @@
+.inventory img {
+    height: 100px
+}
+
+.inventory {
+    display: flex
+}
+
+.inventory-item {
+    margin: 3%;
+    text-align: center
+}

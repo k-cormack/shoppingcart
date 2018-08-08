@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./App/Assets/style.css">
 </head>
+
 <body>
-    
+    <main>
+        <div class="inventory">
+            <div class="inventory-item">
+                <img src="./App/Assets/chewie_co_pilot_tee_dd.jpg" alt="Chewie Shirt">T-SHIRT
+            </div>
+            <div class="inventory-item">
+                <img src="./App/Assets/alien_mug.jpg" alt="Face Hug Mug">MUG
+            </div>
+            <div class="inventory-item">
+                <img src="./App/Assets/zombie_head_cookie_jar2.jpg" alt="Zombie Cookie">COOKIE JAR
+            </div>
+        </div>
+
+        <div class="purchase">
+            <button onclick="">$14.00</button>
+            <button onclick="">$15.00</button>
+            <button onclick="app.controllers.vendController.addMoney('quarter')">$22.00</button>
+        </div>
+        <div class="total">
+            <p>Subtotal: $
+                <span id="sub-total">0.00</span>
+            </p>
+            <p>State Tax ("theft"): $
+                <span id="tax-rate">0.00</span>
+            </p>
+            <p>Total: $
+                <span id="total-cost">0.00</span>
+            </p>
+        </div>
+    </main>
+
+
+
+
+    <script src="main.js" type="module"></script>
 </body>
+
 </html>
