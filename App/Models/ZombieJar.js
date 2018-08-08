@@ -10,7 +10,7 @@ class ZombieJar {
         this.img = img || ""
         this.itemInventory = itemInventory || 0
     }
-    purchase(id){
+    updateInventory(id){
         if (this.soldOut) {
             return
         }
